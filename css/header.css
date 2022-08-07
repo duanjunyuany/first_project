@@ -1,0 +1,61 @@
+/* 头部导航栏 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+}
+/* 版心 */
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  /* background-color: red; */
+}
+/* tab栏 */
+.container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 100px;
+}
+.container ul li {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  /* background-color: green; */
+}
+.container li a {
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container a:hover {
+  color: rgb(67, 188, 77);
+}
+/* 学习笔记 */
+.container ul li:nth-child(2) {
+  overflow: hidden;
+}
+.container .more a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  border-bottom: 1px solid rgb(115, 159, 150);
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  /* background-color: skyblue; */
+}
+.container ul li:nth-child(2):hover {
+  overflow: visible;
+}
